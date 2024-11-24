@@ -15,9 +15,340 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
+        combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
+        };
+
+        combo_exclaimation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <2 3>;
+        };
+
+        combo_at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <14 15 16>;
+        };
+
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <1 3>;
+        };
+
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <1 5>;
+        };
+
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <2 4>;
+        };
+
+        combo_ampersand {
+            bindings = <&kp AMPS>;
+            key-positions = <19 20>;
+        };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <19 21>;
+        };
+
+        combo_asterisk {
+            bindings = <&kp ASTRK>;
+            key-positions = <21 20>;
+        };
+
+        combo_left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <8 7>;
+        };
+
+        combo_right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <9 8>;
+        };
+
+        combo_volume_up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <27 28>;
+        };
+
+        combo_volume_down {
+            bindings = <&kp K_VOLUME_DOWN>;
+            key-positions = <25 26>;
+        };
+
+        combo_mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <25 26 27>;
+        };
+
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
+        };
+
+        combo_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <5 4>;
+        };
+
+        combo_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <29 28>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <17 16>;
+        };
+
+        combo_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <30 31>;
+        };
+
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <18 19>;
+        };
+
+        combo_media_previous {
+            bindings = <&kp C_RW>;
+            key-positions = <13 26>;
+        };
+
+        combo_Media_Next {
+            bindings = <&kp C_FF>;
+            key-positions = <27 16>;
+        };
+
+        combo_left_control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <24 36>;
+        };
+
+        combo_left_option {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <24 38>;
+        };
+
+        combo_single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <9 10>;
+        };
+
+        combo_apostrophe {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <10 20 21>;
+        };
+
+        combo_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <21 20 19>;
+        };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <9 10 20>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <33 32 31>;
+        };
+
+        combo_semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <30 31 32>;
+        };
+
+        combo_dot {
+            bindings = <&kp DOT>;
+            key-positions = <9 8 19>;
+        };
+
+        combo_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <18 7 8>;
+        };
+
+        combo_right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <23 22>;
+        };
+
+        combo_left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <22 21>;
+        };
+
+        combo_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <10 11>;
+        };
+
+        combo_enter_left {
+            bindings = <&kp ENTER>;
+            key-positions = <2 3 4>;
+        };
+
+        combo_enter_right {
+            bindings = <&kp ENTER>;
+            key-positions = <9 8 7>;
+        };
+
+        combo_play {
+            bindings = <&kp C_PLAY_PAUSE>;
+            key-positions = <26 27>;
+        };
+
+        combo_tab_2 {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+        };
+
+        combo_space {
+            bindings = <&kp SPACE>;
+            key-positions = <1 2 3>;
+        };
+
+        combo_space_2 {
+            bindings = <&kp SPACE>;
+            key-positions = <15 16 17>;
+        };
+
+        combo_meme {
+            bindings = <&macro_meme>;
+            key-positions = <34 30>;
+        };
+
+        combo_sad {
+            bindings = <&macro_sweat>;
+            key-positions = <25 16>;
+        };
+
+        combo_thumbs_up {
+            bindings = <&macro_thumbs_up>;
+            key-positions = <17 25>;
+        };
+
+        combo_cheers_benroy {
+            bindings = <&macro_cheers_benroy>;
+            key-positions = <25 17 3>;
+        };
+
+        combo_desktop_right {
+            bindings = <&kp RC(RIGHT)>;
+            key-positions = <41 35>;
+        };
+
+        combo_desktop_left {
+            bindings = <&kp RC(LEFT)>;
+            key-positions = <41 33>;
+        };
+
+        combo_desktop_up {
+            bindings = <&kp RC(UP_ARROW)>;
+            key-positions = <41 22>;
+        };
+
+        combo_mouse_right {
+            bindings = <&to 5>;
+            key-positions = <18 22>;
+        };
+
+        combo_mouse_left {
+            bindings = <&to 5>;
+            key-positions = <29 25>;
+        };
+
+        combo_joy_emote {
+            bindings = <&macro_joy_emote>;
+            key-positions = <25 15>;
+        };
+
+        combo_macro_pathetic {
+            bindings = <&macro_patriotic_pathetic>;
+            key-positions = <33 30 32>;
+        };
+
+        combo_backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 16 2>;
+        };
+
+        combo_right_shift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <31 32>;
+        };
+
+        combo_right_command {
+            bindings = <&kp RIGHT_COMMAND>;
+            key-positions = <23 41>;
+        };
+
+        combo_tilde {
+            bindings = <&kp GRAVE>;
+            key-positions = <17 4 3>;
+        };
+
+        man-in-arena {
+            bindings = <&man_in_arena>;
+            key-positions = <17 16 15 18 19 20>;
+        };
+    };
+
+    macros {
+        macro_meme: macro_meme {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_MEME";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp SPACE &kp F &kp E &kp E &kp L &kp SPACE &kp L &kp I &kp K &kp E &kp SPACE &kp W &kp E &kp SPACE &kp H &kp A &kp V &kp E &kp SPACE &kp G &kp O &kp N &kp E &kp SPACE &kp P &kp A &kp S &kp T &kp SPACE &kp S &kp O &kp C &kp I &kp A &kp L &kp SPACE &kp N &kp O &kp R &kp M &kp S &kp SPACE &kp H &kp A &kp H &kp H &kp A &kp A &kp H &kp A &kp H &kp H &kp H &kp ENTER>;
+        };
+
+        macro_thumbs_up: macro_thumbs_up {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_THUMBS_UP";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp T &kp H &kp U &kp M &kp B &kp S>;
+        };
+
+        macro_sweat: macro_sweat {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_SWEAT";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp S &kp W &kp E &kp A &kp T>;
+        };
+
+        macro_cheers_benroy: macro_cheers_benroy {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_CHEERS_BENROY";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(C) &kp H &kp E &kp E &kp R &kp S &kp EXCL &kp RET &kp LS(B) &kp E &kp N &kp R &kp O &kp Y>;
+        };
+
+        macro_joy_emote: macro_joy_emote {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_JOY_EMOTE";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp J &kp O &kp Y>;
+        };
+
+        macro_patriotic_pathetic: macro_patriotic_pathetic {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_PATRIOTIC_PATHETIC";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(N) &kp O &kp T &kp SPACE &kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE &kp LS(I) &kp SPACE &kp A &kp M &kp SPACE &kp P &kp A &kp T &kp R &kp I &kp O &kp T &kp I &kp C &kp SPACE &kp B &kp U &kp T &kp SPACE &kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE &kp LS(I) &kp SPACE &kp A &kp M &kp SPACE &kp P &kp A &kp T &kp H &kp E &kp T &kp I &kp C>;
+        };
+
+        man_in_arena: man_in_arena {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "MAN_IN_ARENA";
         };
     };
 
