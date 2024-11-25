@@ -12,6 +12,31 @@
 // https://zmk.dev/docs/features/studio#including-extra-layers
 
 / {
+    behaviors {
+        skq: sticky_key_quick_release {
+            label = "STICKY_KEY_QUICK_RELEASE";
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <2000>;
+            quick-release;
+            ignore-modifiers;
+        };
+
+        gqt: global-quick-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
 
