@@ -332,7 +332,7 @@
 
         combo_left_desktop {
             bindings = <&kp LC(LEFT_ARROW)>;
-            key-positions = <1 13>;
+            key-positions = <16 4>;
         };
     };
 
